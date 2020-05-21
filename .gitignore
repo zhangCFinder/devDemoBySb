@@ -30,3 +30,12 @@ build/
 ### VS Code ###
 .vscode/
 /.mvn/
+
+### macOS template
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+/target
+/.idea
+devDemo.iml
