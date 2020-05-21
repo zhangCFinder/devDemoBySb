@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zcFinder.dao.mapper.MessageServiceMapper">
+    <select id="getMessageById" resultType="com.zcFinder.dao.model.Message">
+        SELECT
+        *
+        FROM
+        Message
+        WHERE id = #{msgId}
+    </select>
+
+    <select id="getAllMessages" resultType="java.util.Map">
+        SELECT
+        *
+        FROM
+        Message
+    </select>
+</mapper>
